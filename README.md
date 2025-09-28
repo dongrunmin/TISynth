@@ -70,15 +70,18 @@ sh demo.sh
 
 ### Generated Result
 
-- Control conditions
-  - Mask
-    ![Mask](./demo/GID_demo/output/label.png)
-  
-  - Ref Image
-    ![Reference](./demo/GID_demo/ref/GF2_PMS1_E87.4_N44.1_20160912_L1A0001821711-MSS1_221.jpg)
-
-- Generated Image
-  ![Generation](./demo/GID_demo/output/generation.png)
+<table>
+  <tr>
+    <th>Control Mask</th>
+    <th>Reference Image</th>
+    <th>Generated Image</th>
+  </tr>
+  <tr>
+    <td><img src="./demo/GID_demo/output/label.png" height="200"></td>
+    <td><img src="./demo/GID_demo/ref/GF2_PMS1_E87.4_N44.1_20160912_L1A0001821711-MSS1_221.jpg" height="200"></td>
+    <td><img src="./demo/GID_demo/output/generation.png" height="200"></td>
+  </tr>
+</table>
 
 ## Training
 
@@ -194,5 +197,6 @@ Some important arguments for configurations of sampling are:
 ## Citation
 
 ## Acknowledgements
+
 
 This implementation is based on [ControlNet](https://github.com/lllyasviel/ControlNet), [CoSeR](https://github.com/VINHYU/CoSeR), and [Freemask](https://github.com/LiheYoung/FreeMask). Thanks for their public codes.
