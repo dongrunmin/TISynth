@@ -1,0 +1,35 @@
+data:
+  target: main.DataModuleFromConfig
+  params:
+    batch_size: 2
+    num_workers: 2
+    wrap: false
+    train:
+      target: ldm.data.GID24_Control_ref.GID24Train
+      params:
+        size: 512
+    validation:
+      target: ldm.data.GID24_Control_ref.GID24Validation
+      params:
+        size: 512
+
+base_learning_rate: 1.0e-05
+
+lightning:
+  modelcheckpoint:
+    params:
+      # every_n_train_steps: 20000
+      every_n_epochs: 1
+  callbacks:
+    image_logger:
+      target: main.ImageLogger
+      params:
+        batch_frequency: 1000
+        max_images: 1
+        increase_log_steps: False
+
+  trainer:
+    benchmark: True
+    max_steps: 10000000
+
+
