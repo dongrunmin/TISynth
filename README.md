@@ -8,7 +8,7 @@
 * Download the repo and setup the environment with:
 
 ```bash
-git clone https://github.com/dongrunmin/xxx
+git clone https://github.com/dongrunmin/TISynth
 cd TISynth
 conda env create -f tisynth.yml
 conda activate tisynth
@@ -200,3 +200,4 @@ Some important arguments for configurations of sampling are:
 
 
 This implementation is based on [ControlNet](https://github.com/lllyasviel/ControlNet), [CoSeR](https://github.com/VINHYU/CoSeR), and [Freemask](https://github.com/LiheYoung/FreeMask). Thanks for their public codes.
+
